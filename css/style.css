@@ -1,0 +1,9 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.featured img {
+  height: 200px;
+  width: 300px;
+}
