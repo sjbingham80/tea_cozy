@@ -46,6 +46,7 @@ body {
   background-position: center;
   justify-content: center;
   align-items: center;
+
 }
 
 .mission .statement {
@@ -57,27 +58,11 @@ body {
 
 /*Tea of the Month*/
 
-.featured {
-  display: flex;
-  width: auto;
-  align-content: center;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.totm {
+.featured .totm {
+  width: 100%;
   text-align: center;
   margin-top: 25px;
 }
-
-.offerings {
-  display: flex;
-  margin-left: 350px;
-  width: 1200px;
-  flex-wrap: wrap;
-}
-
 
 .items img {
   display: flex;
@@ -86,10 +71,35 @@ body {
 }
 
 .items {
+  flex: 1 1 300px;
+  margin-right: 100px;
   display: inline-block;
+  max-width: 1000px;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: 50px;
-  margin-right: 50px;
+  padding: 50px;
+}
+
+
+/*locations*/
+
+.location {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.locations {
+  display: inline-flex;
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  margin: 40px;
+  
 
 }
