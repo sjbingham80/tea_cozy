@@ -10,6 +10,8 @@ body {
 /*header*/
 .header {
   display: flex;
+  background-color: black;
+  position: fixed;
   flex-direction: row;
   height: 69px;
   width: 100%;
@@ -37,10 +39,11 @@ body {
 }
 
 /*mission*/
-.mission{
+#mission{
   display: flex;
   height: 700px;
   width: 100%;
+  padding-top: 70px;
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -49,7 +52,7 @@ body {
 
 }
 
-.mission .statement {
+#mission .statement {
   width: 100%;
   background-color: black;
   text-align: center;
@@ -58,48 +61,83 @@ body {
 
 /*Tea of the Month*/
 
-.featured .totm {
-  width: 100%;
+#featured {
+  display:flex;
+  height: 700px;
+  width: 1000px;
+  margin: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   text-align: center;
-  margin-top: 25px;
 }
+
 
 .items img {
   display: flex;
   height: 200px;
   width: 300px;
+  padding-bottom: 10px;
 }
 
 .items {
   flex: 1 1 300px;
-  margin-right: 100px;
   display: inline-block;
   max-width: 1000px;
   flex-wrap: wrap;
-  padding: 50px;
+  padding: 10px;
+
+}
+
+.item .span {
+  display: block;
+  padding: 5px;
+  text-align: center;
 }
 
 
 /*locations*/
 
-.location {
-  display: flex;
+#locations {
+  display: block;
   height: 500px;
   width: 100%;
+  padding-top: 50px;
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   justify-content: center;
   align-items: center;
+  text-align: center;
+
 
 }
 
-.locations {
+.flex-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-container .location {
   display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 300px;
   width: 300px;
   background-color: black;
   margin: 40px;
-  
+}
 
+/*footer*/
+.footer{
+  height: 200px;
+  text-align: center;
+}
+
+.copyright{
+  padding-left: 20px;
 }
